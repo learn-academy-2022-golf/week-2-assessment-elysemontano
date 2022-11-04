@@ -1,5 +1,8 @@
 // ASSESSMENT 2: Coding Practical Questions with Jest
 
+// const { it } = require("node:test")
+// const { describe } = require("yargs")
+
 // Please read all questions thoroughly
 // Pseudo coding is REQUIRED
 // If you get stuck, please leave comments to help us understand your thought process
@@ -14,12 +17,34 @@
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const numbersArray1 = [6, 7, 8, 9, 10]
-// Expected output: [18, 21, 24, 27, 30]
-const numbersArray2 = [24, 27, 30, 33, 36]
-// Expected output: [72, 81, 90, 99, 108]
+describe("multByThree", () => {
+  it("takes in an array of numbers and returns an array with all the numbers multiplied by 3.", () => {
+    const numbersArray1 = [6, 7, 8, 9, 10]
+    const numbers1Output = [18, 21, 24, 27, 30]
+    const numbersArray2 = [24, 27, 30, 33, 36]
+    const numbers2Output = [72, 81, 90, 99, 108]
+    expect(multByThree(numbersArray1)).toEqual(numbers1Output)
+    expect(multByThree(numbersArray2)).toEqual(numbers2Output)
+  })
+})
+
+// ReferenceError: multByThree is not defined
 
 // b) Create the function that makes the test pass.
+
+// Pseudocode 
+// Create a function called multByThree that takes in an array
+// One parameter - array
+// Iterate over array using .map so that we can modify each value in the array
+  // Multiply each value by three
+// Return mapped array
+
+const multByThree = (array) => {
+  return array.map(value => value * 3)
+}
+
+// Test Suites: 1 passed, 1 total
+// Tests:       1 passed, 1 total
 
 // --------------------1) Create a function that takes a object as an argument and decides if the number inside it is evenly divisible by three or not.
 
