@@ -6,6 +6,10 @@ First, without external resources. Challenge yourself to answer from memory as i
 
 Then, research the question to expand on your answer. Even if you feel you have answered the question completely, there is always something more to learn. Write your researched answer in your OWN WORDS.
 
+What is the difference between a function and a method
+Researched answer:
+Functions are snippets of code that are give custom names given by developers. 
+
 1. What is the difference between a parameter and an argument?
 
 Your answer:
